@@ -14,7 +14,7 @@ import java.util.List;
 @RequestMapping("/Job")
 public class JobController {
     @Autowired
-    private JobRepo jobRepo;
+    private JobRepo jobRepo   ;
 
     @PostMapping("/publishJob")
     public ResponseEntity<String> publishJob(@RequestBody Job job){
